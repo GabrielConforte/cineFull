@@ -4,9 +4,11 @@ This is a proyect made with react and the movie database API
 
 ### Dependecies and frameworks
 
--Bootstrap 5
--React-icons
--React-router-dom
+>Bootstrap 5
+
+>React-icons
+
+>React-router-dom
 
 ### commands
 yarn start 
