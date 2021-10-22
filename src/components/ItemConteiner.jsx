@@ -4,7 +4,7 @@ import Loading from './Loading'
 import { BsStarFill, BsStar } from 'react-icons/bs'
 const MOVIE_FEATURED = "https://api.themoviedb.org/3/discover/movie?api_key=c6ff56f0fb1132b00e92da978bdfffda"
 const MOVIE_FINDER = "https://api.themoviedb.org/3/search/movie?api_key=c6ff56f0fb1132b00e92da978bdfffda&query="
-
+const MOVIE_POSTER = "https://image.tmdb.org/t/p/w1280"
 
 export default function ItemConteiner() {
     const [parameter, setParameter] = useState('')
@@ -47,7 +47,7 @@ export default function ItemConteiner() {
     return (
         <>
         {load ? <>
-        <div className="d-flex justify-content-center banner mb-2" style={{backgroundImage: "url("+ "https://image.tmdb.org/t/p/w1280/" + movies[Math.floor(Math.random() * 19)].poster_path +")"}}>
+        <div className="d-flex justify-content-center banner mb-2" style={{backgroundImage: `url(${MOVIE_POSTER}${movies[Math.floor(Math.random() * 19)].poster_path})`}}>
             
             <div className="m-5 rounded p-2 w-75">
               <h1 className="white text-center ">DISCOVER NEW MOVIES</h1>
