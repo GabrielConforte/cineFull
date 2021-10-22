@@ -47,7 +47,7 @@ export default function ItemConteiner() {
     return (
         <>
         {load ? <>
-        <div className="d-flex justify-content-center banner mb-2" style={{backgroundImage: `url(${MOVIE_POSTER}${movies[Math.floor(Math.random() * 19)].poster_path})`}}>
+        <div className="d-flex justify-content-center banner mb-2" style={{backgroundImage: `url(${MOVIE_POSTER}${movies[0].poster_path})`}}>
             
             <div className="m-5 rounded p-2 w-75">
               <h1 className="white text-center ">DISCOVER NEW MOVIES</h1>
