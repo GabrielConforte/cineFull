@@ -2,7 +2,6 @@ import React , {useEffect,useState}from 'react'
 import Items from './Items'
 import Loading from './Loading'
 import { BsStarFill, BsStar } from 'react-icons/bs'
-import Stars from './Stars'
 const MOVIE_FEATURED = "https://api.themoviedb.org/3/discover/movie?api_key=c6ff56f0fb1132b00e92da978bdfffda"
 const MOVIE_FINDER = "https://api.themoviedb.org/3/search/movie?api_key=c6ff56f0fb1132b00e92da978bdfffda&query="
 

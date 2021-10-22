@@ -7,7 +7,7 @@ const MOVIE_POSTER = "https://image.tmdb.org/t/p/w1280/"
 const Items = ({title, poster_path, vote_average, id, rateFilter}) => (
     <>
     
-    {rateFilter <= vote_average && rateFilter >= vote_average - 2 || rateFilter === 0 ? <Link className="mb-2 col-sm-4 col-md-3" to={`/item/${id}`}>
+    {(rateFilter <= vote_average && rateFilter >= vote_average - 2) ||( rateFilter === 0 )? <Link className="mb-2 col-sm-4 col-md-3" to={`/item/${id}`}>
          <button className="card rounded"><div>
             
             <img className="card-img-top shadow my-1" src={MOVIE_POSTER + poster_path} alt={title}></img>
